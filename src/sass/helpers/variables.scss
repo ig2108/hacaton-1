@@ -1,0 +1,140 @@
+$width_mobile: 282px;
+$width_tab: 689px;
+$width_desk: 1300px;
+
+%centralize {
+  margin: 0 auto;
+  text-align: center;
+}
+
+$main-color-blue: #824fe3;
+$main-color-yellow: #fcae26;
+$main-color-bg: #fafafa;
+$bg-color-pink: #faebd0;
+$bg-color-light-red: #fbdcd2;
+$bg-color-purple: #e2d8f5;
+$bg-color-light-blue: #c8eae8;
+$font-black-color: #222222;
+$font-regular-color: #444444;
+$font-yellow-color: #fcae26;
+$font-hover-white-color: #ffffff;
+
+
+$transition_color: color 300ms linear;
+$transition_opacity: opacity 300ms linear;
+$transition_transform: transform 300ms linear;
+$transition_box_shadow: box-shadow 300ms linear;
+$transition_bg_color: background-color 300ms linear;
+$transition_fill: fill 300ms linear;
+
+/*
+FONTS
+*/
+
+%font_open_300 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+%font_open_300i {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+%font_open_reg {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+%font_open_reg-i {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+%font_open_600 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+%font_open_600i {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
+%font_open_700 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+%font_open_700i {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+%font_open_800 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
+%font_open_800i {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 800;
+}
+
+%font_ubunt_300 {
+  font-family: 'Ubuntu, sans-serif';
+  font-style: normal;
+  font-weight: 300;
+}
+
+%font_ubunt_300i {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+%font_ubunt_reg {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+%font_ubunt_reg-i {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+%font_ubunt_500 {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+%font_ubunt_500i {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+%font_ubunt_700 {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+%font_ubunt_700i {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}

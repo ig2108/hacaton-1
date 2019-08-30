@@ -1,0 +1,61 @@
+@mixin font_settings($f_size, $l_height) {
+  font-size: $f_size;
+  line-height: $l_height;
+}
+
+@mixin pseudo($display: block, $content: '', $clear: both) {
+  display: $display;
+  content: $content;
+  clear: $clear;
+}
+
+@mixin bg-image ($path: '', $size: cover, $repeat: no-repeat, $pos_x: center, $pos_y: center) {
+  background-image: url($path);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position-x: $pos_x;
+  background-position-y: $pos_y;
+}
+
+@mixin center_flex_row ($type: 'all') {
+  display: flex;
+  flex-flow: row wrap;
+
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  }
+  @else if $type== 'ver' {
+    align-items: center;
+  }
+  @else if $type== 'horspbt' {
+    justify-content: space-between;
+  }
+  @else if $type== 'verspbt' {
+    align-items: space-between;
+  }
+  @else if $type== 'spbt-center' {
+    justify-content: space-between;
+    align-items: center;
+  }
+  @else if $type== 'center-spbt' {
+    justify-content: center;
+    align-items: space-between;
+  }
+}
+
+@mixin generate_pseudo_icons ($baseclass, $list, $path, $ext) {
+  @each $icon in $list {
+    .#{$baseclass}#{$icon}::before {
+      background-image: url(#{$path}#{$icon}.#{$ext});
+    }
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .#{$baseclass}#{$icon}::before {
+        background-image: url(#{$path}#{$icon}@2x.#{$ext});
+      }
+    }
+  }
+}

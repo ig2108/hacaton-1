@@ -1,4 +1,21 @@
 /*
    Import partials below
 */
-@import './normalize';
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixins';
+@import 'helpers/extras';
+@import 'normalize';
+@import 'fonts';
+@import 'base';
+
+/*
+Components
+*/
+
+@import 'components/container';
+@import 'components/clearfix';
+
+/*
+@import 'components/';
+*/
