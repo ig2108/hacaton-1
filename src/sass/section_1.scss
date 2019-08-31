@@ -44,6 +44,7 @@
   border-radius: 7px;
   padding: 35px 30px 30px;
   position: relative;
+  min-height: 230px;
 
   &::after {
     @include pseudo;
@@ -56,8 +57,8 @@
   }
 }
 
-@media(min-resolution: 192dpi){
-  .descr_photo{
+@media (min-resolution: 192dpi) {
+  .descr_photo {
     background-image: url(../images/descr_photo@2x.png);
   }
 }
@@ -74,7 +75,7 @@
   position: relative;
   margin: 31px 0 10px 36px;
 
-  &::before{
+  &::before {
     @include pseudo;
     position: absolute;
     top: 50%;
@@ -88,59 +89,66 @@
     background-position: center;
     background-image: url(../images/marker.png);
     background-color: $main-color-yellow;
+    background-size: 18px;
   }
 }
 
-
-.direction__list li:nth-child(1){
+.direction__list li:nth-child(1) {
   margin-top: 0;
 }
 
-.direction__item--title{
+.direction__item--title {
   @extend %font_ubunt_700;
   font-size: 25px;
+  color: $font-black-color;
 }
 
-.direction__item--descr{
+.direction__item--descr {
   @extend %font_ubunt_reg;
   color: $font-regular-color;
   font-size: 16px;
   margin: 10px 0 20px 0;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
-.direction__item--age{
+.direction__item--age {
   @extend %font_open_700;
   font-size: 30px;
   color: $font-yellow-color;
   position: relative;
   display: block;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
 
-  &::before{
-    content: 'років';
-    display: block;
-    clear: both;
-    @extend %font_ubunt_reg;
-    font-size: 13px;
+.direction__item--age__powr {
+  @extend %font_ubunt_reg;
+  font-size: 13px;
+  position: absolute;
+  top: -12px;
+  right: 82px;
+
+  &::after {
+    @include pseudo;
+    width: 30px;
+    height: 1px;
+    background-color: $font-yellow-color;
     position: absolute;
-    top: -12px;
-    right: 82px;
-    text-decoration: underline;
+    top: 16px;
+    transition: all 0.3s ease-in-out;
   }
 }
 
-.direction__item svg{
+.direction__item svg {
   position: absolute;
   fill: $main-color-yellow;
   width: 19px;
   height: 13px;
   bottom: -19px;
   left: 2px;
-  transition: fill .3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
 }
 
-.direction__item{
+.direction__item {
   display: inline-block;
   width: 100%;
   min-height: 230px;
@@ -148,15 +156,203 @@
   margin-top: 15px;
   padding: 25px 45px;
   border-radius: 3px;
-  transition: background-color .3s ease-in-out;
+  transition: background-color.3s ease;
 
-  &:hover{
+  &:hover {
     background-color: $main-color-yellow;
-    & .direction__item--descr, .direction__item--age{
+
+    & .direction__item--age__powr::after {
+      background-color: $font-hover-white-color;
+    }
+
+    & .direction__item--descr,
+    .direction__item--age {
       color: $font-hover-white-color;
     }
-    & svg{
+
+    & svg {
       fill: $font-hover-white-color;
     }
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .section__title::before {
+    background-image: url(../images/marker@2x.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .descr_page::before {
+    left: -24px;
+  }
+
+  .descr_photo {
+    background-position-x: -14px;
+    background-size: 104%;
+  }
+
+  .descr_prog {
+    min-height: 184px;
+    padding-left: 77px;
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .descr_prog::after {
+    width: 2px;
+    height: 100px;
+    top: 42px;
+    left: 52px;
+  }
+
+  .section__title {
+    line-height: 1;
+    margin: 70px 0 40px 38px;
+    font-size: 33px;
+  }
+
+  .direction__list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+  }
+
+  .direction__item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 310px;
+    min-height: 296px;
+    margin-top: 0;
+    padding: 52px 53px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .direction__item--title {
+    font-size: 30px;
+  }
+
+  .direction__item--age {
+    font-size: 40px;
+    line-height: 1;
+    position: relative;
+    height: 40px;
+    display: block;
+  }
+
+  .direction__item--title {
+    font-size: 30px;
+    display: block;
+    line-height: 1;
+    height: 30px;
+  }
+
+  .direction__item--age__powr {
+    top: -7px;
+    right: 64px;
+
+    &::after {
+      top: 18px;
+    }
+  }
+
+  .direction__list li:nth-child(1) {
+    border-right: 1px dashed #e4e4e5;
+    border-bottom: 1px dashed #e4e4e5;
+  }
+
+  .direction__list li:nth-child(2) {
+    border-left: 1px dashed #e4e4e5;
+    border-bottom: 1px dashed #e4e4e5;
+  }
+
+  .direction__list li:nth-child(3) {
+    border-right: 1px dashed #e4e4e5;
+    border-top: 1px dashed #e4e4e5;
+  }
+
+  .direction__list li:nth-child(4) {
+    border-left: 1px dashed #e4e4e5;
+    border-top: 1px dashed #e4e4e5;
+  }
+
+  .direction__item:hover svg {
+    transform: scale(1.5);
+  }
+}
+
+@media (min-width: 1300px) {
+  .descr_page {
+    font-size: 20px;
+    width: 518px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .descr_page::before{
+    top: 138px;
+    font-size: 60px;
+  }
+
+  .descr {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .descr_photo {
+    width: 650px;
+    order: -1;
+    margin: 120px 0 120px;
+  }
+
+  .descr_prog{
+    min-height: 230px;
+    font-size: 25px;
+    padding: 0 225px 0;
+  }
+
+  .descr_prog::after {
+    width: 2px;
+    height: 100px;
+    top: 65px;
+    left: 200px;
+  }
+
+  .direction__list li:nth-child(1) {
+    border-right: 1px dashed #e4e4e5;
+    border-bottom: none;
+  }
+
+  .direction__list li:nth-child(2) {
+    border-left: 1px dashed #e4e4e5;
+    border-right: 1px dashed #e4e4e5;
+    border-bottom: none;
+  }
+
+  .direction__list li:nth-child(3) {
+    border-right: 1px dashed #e4e4e5;
+    border-left: 1px dashed #e4e4e5;
+    border-top: none;
+  }
+
+  .direction__list li:nth-child(4) {
+    border-left: 1px dashed #e4e4e5;
+    border-top: none;
+  }
+
+  .direction{
+    max-width: 1300px;
+  }
+
+  .direction__item{
+    width: 325px;
+    height: 300px;
   }
 }

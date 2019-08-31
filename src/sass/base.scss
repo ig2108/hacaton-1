@@ -46,18 +46,20 @@ button {
 }
 
 .container {
-  width: 18.125rem;
+  width: $width_mobile;
   margin: 0 auto;
+  vertical-align: top;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 42.5rem;
+    width: $width_tab;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .container {
-    width: 871px;
+    width: $width_desk;
   }
 }
+
