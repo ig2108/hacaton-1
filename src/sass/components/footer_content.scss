@@ -1,0 +1,18 @@
+.footer_content {
+  margin-left: 2.8125rem;
+}
+
+@media (min-width: 768px) {
+  .footer_content {
+    @include center_flex_row('horspbt');
+    align-items: flex-start;
+    width: 38.75rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .footer_content {
+    width: 72.0625rem;
+  }
+}

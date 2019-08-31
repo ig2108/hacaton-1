@@ -1,0 +1,20 @@
+.contacts {
+  @extend %list;
+}
+
+.contacts__item:nth-last-of-type(-n+1) {
+  margin-bottom: 2.0625rem;
+}
+
+.contacts__link {
+  @extend %link;
+  @extend %font_ubunt_reg;
+  @include font_settings(0.875rem, 1.5625rem);
+  color: $font-primary-footer-color;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    width: 9.3125rem;
+  }
+}

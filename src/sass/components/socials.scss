@@ -1,0 +1,22 @@
+.socials {
+  @include center_flex_row('spbt-center');
+  width: 9.125rem;
+  padding-bottom: 2.0625rem;
+}
+
+.socials__icon {
+  width: 2.25rem;
+  height: 2.3125rem;
+}
+
+@media (min-width: 768px) {
+  .socials{
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .socials {
+    width: 9.9375rem;
+  }
+}

@@ -1,0 +1,15 @@
+.address {
+  margin-bottom: 1.75rem;
+}
+
+.address__text {
+  @extend %font_ubunt_reg;
+  @include font_settings(0.875rem, 1.5625rem);
+  color: $font-primary-footer-color;
+}
+
+@media (min-width: 768px) {
+  .address {
+    width: 12.0625rem;
+  }
+}
