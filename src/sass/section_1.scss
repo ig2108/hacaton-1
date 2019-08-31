@@ -1,0 +1,162 @@
+// DESCRIPTION
+
+.descr {
+  @extend %font_ubunt_reg;
+  line-height: 1.5;
+}
+
+.descr_page {
+  font-size: 14px;
+  color: $font-regular-color;
+  margin-top: 60px;
+  position: relative;
+
+  &::before {
+    content: '\201c';
+    font-size: 50px;
+    color: $main-color-yellow;
+    position: absolute;
+    top: -40px;
+  }
+
+  &-second {
+    margin-top: 20px;
+  }
+}
+
+.descr_photo {
+  width: 100%;
+  height: 322px;
+  background-image: url(../images/descr_photo@1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: -50px;
+  background-size: 215%;
+  border-radius: 5px;
+  margin: 30px auto 30px;
+}
+
+.descr_prog {
+  font-size: 18px;
+  text-align: center;
+  color: $font-hover-white-color;
+  background-color: $main-color-blue;
+  border-radius: 7px;
+  padding: 35px 30px 30px;
+  position: relative;
+
+  &::after {
+    @include pseudo;
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    top: 25px;
+    left: 111px;
+    background-color: $main-color-yellow;
+  }
+}
+
+@media(min-resolution: 192dpi){
+  .descr_photo{
+    background-image: url(../images/descr_photo@2x.png);
+  }
+}
+
+// DIRECTIONS
+
+.section__title {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: $font-black-color;
+  line-height: 78px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  margin: 31px 0 10px 36px;
+
+  &::before{
+    @include pseudo;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/marker.png);
+    background-color: $main-color-yellow;
+  }
+}
+
+
+.direction__list li:nth-child(1){
+  margin-top: 0;
+}
+
+.direction__item--title{
+  @extend %font_ubunt_700;
+  font-size: 25px;
+}
+
+.direction__item--descr{
+  @extend %font_ubunt_reg;
+  color: $font-regular-color;
+  font-size: 16px;
+  margin: 10px 0 20px 0;
+  transition: color .3s ease-in-out;
+}
+
+.direction__item--age{
+  @extend %font_open_700;
+  font-size: 30px;
+  color: $font-yellow-color;
+  position: relative;
+  display: block;
+  transition: color .3s ease-in-out;
+
+  &::before{
+    content: 'років';
+    display: block;
+    clear: both;
+    @extend %font_ubunt_reg;
+    font-size: 13px;
+    position: absolute;
+    top: -12px;
+    right: 82px;
+    text-decoration: underline;
+  }
+}
+
+.direction__item svg{
+  position: absolute;
+  fill: $main-color-yellow;
+  width: 19px;
+  height: 13px;
+  bottom: -19px;
+  left: 2px;
+  transition: fill .3s ease-in-out;
+}
+
+.direction__item{
+  display: inline-block;
+  width: 100%;
+  min-height: 230px;
+  background-color: $main-color-bg;
+  margin-top: 15px;
+  padding: 25px 45px;
+  border-radius: 3px;
+  transition: background-color .3s ease-in-out;
+
+  &:hover{
+    background-color: $main-color-yellow;
+    & .direction__item--descr, .direction__item--age{
+      color: $font-hover-white-color;
+    }
+    & svg{
+      fill: $font-hover-white-color;
+    }
+  }
+}
