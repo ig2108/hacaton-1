@@ -1589,6 +1589,10 @@ Components
     font-size: 2.0625rem;
   }
 
+  .direction {
+    padding-bottom: 2rem;
+  }
+
   .direction__list {
     display: flex;
     flex-flow: row wrap;
@@ -1662,8 +1666,11 @@ Components
     left: 2.6875rem;
   }
 
-  .section-2__content {
+  .section-2 {
     padding-top: 2.1875rem;
+  }
+
+  .section-2__content {
     padding-bottom: 1.25rem;
   }
 
@@ -1893,6 +1900,7 @@ Components
   }
 
   .direction {
+    padding-bottom: 3.5rem;
     max-width: 81.25rem;
   }
 
@@ -1906,13 +1914,7 @@ Components
   }
 
   .section-2 {
-    height: 48rem;
     background-color: #fafafa;
-  }
-
-  .section-2__content {
-    padding-top: 7rem;
-    padding-bottom: 7.1875rem;
   }
 
   .study-list {
