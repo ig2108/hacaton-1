@@ -1,5 +1,5 @@
 .footer_content {
-  margin-left: 2.8125rem;
+  padding-left: 2.8125rem;
 }
 
 @media (min-width: 768px) {
@@ -8,5 +8,6 @@
     align-items: flex-start;
     width: 38.75rem;
     margin: 0 auto;
+    padding-left: 0;
   }
 }

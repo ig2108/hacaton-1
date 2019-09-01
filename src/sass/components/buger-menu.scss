@@ -33,6 +33,7 @@
   @include center_flex_row('horspbt');
   margin-bottom: 70px;
 }
+
 @media screen and (min-width: 768px) {
   .burger-menu_head {
     padding-top: 36px;
@@ -66,6 +67,7 @@
 }
 
 .burger-nav__save {
+  @extend %font_open_700;
   margin-top: 20px;
   padding: 14px 18px;
   border-radius: 5px;
