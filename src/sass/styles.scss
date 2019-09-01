@@ -1,11 +1,11 @@
 /*
    Import partials below
 */
+@import 'normalize';
 @import 'helpers/variables';
 @import 'helpers/placeholders';
 @import 'helpers/mixins';
 @import 'helpers/extras';
-@import 'normalize';
 @import 'fonts';
 @import 'base';
 
@@ -14,6 +14,8 @@ Components
 */
 
 @import 'components/clearfix';
+@import './section_1.scss';
+@import 'components/section3';
 @import 'components/footer';
 @import 'components/footer_content';
 @import 'components/logo';
@@ -23,10 +25,7 @@ Components
 @import 'components/socials';
 @import 'components/footer2';
 @import 'components/footer_content_2';
-@import 'components/section3';
 // @import 'components/wrapper__item';
-
-
 
 /*
 @import 'components/';
