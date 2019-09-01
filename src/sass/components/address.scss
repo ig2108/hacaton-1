@@ -8,6 +8,10 @@
   color: $font-primary-footer-color;
 }
 
+.address__text_span {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .address {
     width: 12.0625rem;
