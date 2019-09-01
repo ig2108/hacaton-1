@@ -3,7 +3,7 @@
   padding-bottom: 60px;
 }
 
-.section3__title { 
+.section3__title {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   color: $font-black-color;
@@ -13,6 +13,7 @@
   position: relative;
   margin-left: 40px;
 }
+
 .section3__title::before {
   display: block;
   content: '';
@@ -27,7 +28,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../images/section3/marker.png);
-  background-color: #E9AC38;
+  background-color: #e9ac38;
   background-size: 60%;
 }
 
@@ -51,28 +52,28 @@
   height: 225px;
   border: 1px dashed #fff;
   border-radius: 0 25px 0 25px;
-  
 }
+
 .section3__skills {
-padding-top: 40px;
-font-size: 25px;
-letter-spacing: 1px;
-color: #272727;
-@extend %font_ubunt_700;
-margin-bottom: 26px;;
+  padding-top: 40px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #272727;
+  @extend %font_ubunt_700;
+  margin-bottom: 26px;
 }
 
 .section3__text {
-width: 184px;
-height: 103px;
-font-size: 16px;
-line-height: 22px;
-color: #464646;
-@extend %font_ubunt_reg;
+  width: 184px;
+  height: 103px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #464646;
+  @extend %font_ubunt_reg;
 }
 
 .education__item--first {
-  background-color: #F6EAD0;
+  background-color: #f6ead0;
 }
 
 .education__item--second {
@@ -88,29 +89,34 @@ color: #464646;
 }
 
 /* -------MEDIA--------*/
-   
+
 @media screen and (min-width: 768px) {
-  .section3__title { 
+  .section3__title {
     font-size: 33px;
   }
+
   .section3__skills {
     font-size: 30px;
-    } 
+  }
+
   .section3 {
     padding-top: 40px;
     padding-bottom: 70px;
   }
-.education {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-.education__item {
-  width: 300px;
-}
-.education__item:nth-last-child(-n+2) {
-  margin-bottom: 0;
-}
+
+  .education {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .education__item {
+    width: 300px;
+  }
+
+  .education__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -118,10 +124,12 @@ color: #464646;
     padding-top: 110px;
     padding-bottom: 105px;
   }
+
   .section3__skills {
     font-size: 30px;
-    }
-    .education__item {
-      margin-bottom: 0;
-    }
+  }
+  
+  .education__item {
+    margin-bottom: 0;
+  }
 }
