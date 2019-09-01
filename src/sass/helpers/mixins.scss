@@ -1,4 +1,4 @@
-@mixin font_settings($f_size, $l_height) {
+@mixin font_settings($f_size, $l_height) { 
   font-size: $f_size;
   line-height: $l_height;
 }

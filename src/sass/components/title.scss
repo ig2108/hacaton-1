@@ -1,0 +1,103 @@
+.title {
+  @extend %centralize;
+  color: $font-hover-white-color;
+  margin-bottom: 58px;
+
+  &-slogan {
+    @extend %font_open_800;
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 70px;
+  }
+  &-subtitle {
+    @extend %font_ubunt_reg;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    @extend %centralize;
+    width: 281px;
+    padding: 10px 17px;
+    box-shadow: 3px 5.196px 18px rgba(1, 1, 1, 0.1);
+    background-color: #161820b0;
+
+    & > span {
+      color: $main-color-yellow;
+    }
+  }
+  &-scroll {
+    background-image: url(../images/header/Scroll.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 26px;
+    @extend %centralize;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    margin-bottom: 24px;
+
+    &-slogan {
+      font-size: 45px;
+      line-height: 59px;
+      margin-bottom: 15px;
+    }
+    &-subtitle {
+      font-size: 27px;
+      line-height: 32px;
+      width: 440px;
+    }
+  }
+}
+@media screen and (min-width: 1300px) {
+  .title {
+    width: 1234px;
+  }
+  .title-slogan {
+    text-align: left;
+    font-size: 65px;
+  }
+  .title-subtitle {
+    margin-left: 0;
+    font-size: 25px;
+    position: relative;
+  }
+  .title-subtitle::before {
+    @include pseudo;
+    width: 2px;
+    height: 63px;
+    background-color: #fcae26;
+    position: absolute;
+  }
+}
+
+
+.title-slogan {
+	-webkit-animation: title-slogan 0.6s both;
+	        animation: title-slogan 0.6s both;
+}
+
+@-webkit-keyframes title-slogan {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    text-shadow: 0 -1px #555555, 0 -2px #555555, 0 -3px #555555, 0 -4px #555555, 0 -5px #555555, 0 -6px #555555, 0 -7px #555555, 0 -8px #555555;
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+}
+@keyframes title-slogan {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    text-shadow: 0 -1px #555555, 0 -2px #555555, 0 -3px #555555, 0 -4px #555555, 0 -5px #555555, 0 -6px #555555, 0 -7px #555555, 0 -8px #555555;
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+}

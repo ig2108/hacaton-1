@@ -15,6 +15,9 @@ Components
 
 
 @import 'components/clearfix';
+@import 'components/navigation';
+@import 'components/title';
+@import 'components/buger-menu';
 @import './section_1.scss';
 @import 'components/section2.scss';
 @import 'components/section3';
@@ -27,8 +30,9 @@ Components
 @import 'components/socials';
 @import 'components/footer2';
 @import 'components/footer_content_2';
-// @import 'components/wrapper__item';
+@import 'components/up_button';
 
 /*
+@import 'components/wrapper__item';
 @import 'components/';
 */

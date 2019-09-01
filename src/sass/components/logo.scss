@@ -1,26 +1,20 @@
-.logo {
+.logo2 {
   margin: 0 0 1rem 2.8125rem;
 }
 
-.logo__link {
+.logo2__link {
   @extend %link;
 }
 
-.logo__icon {
+.logo2__icon {
   width: 6.25rem;
   height: 1.625rem;
 }
 
 @media (min-width: 768px) {
-  .logo {
+  .logo2 {
     width: 38.75rem;
     margin: 0 auto;
     margin-bottom: 1.5rem;
-  }
-}
-
-@media (min-width: 1300px) {
-  .logo {
-    width: 72.0625rem;
   }
 }

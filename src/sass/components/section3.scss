@@ -7,11 +7,11 @@
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   color: $font-black-color;
-  line-height: 78px;
+  line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
-  margin-left: 40px;
+  margin: 0 0 36px 40px;
 }
 
 .section3__title::before {
@@ -93,6 +93,7 @@
 @media screen and (min-width: 768px) {
   .section3__title {
     font-size: 33px;
+    margin-bottom: 71px;
   }
 
   .section3__skills {
@@ -121,7 +122,7 @@
 
 @media screen and (min-width: 1300px) {
   .section3 {
-    padding-top: 110px;
+    padding-top: 115px;
     padding-bottom: 105px;
   }
 
