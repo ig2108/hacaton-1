@@ -1,6 +1,6 @@
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -46,18 +46,19 @@ button {
 }
 
 .container {
-  width: 18.125rem;
+  width: $width_mobile;
   margin: 0 auto;
+  vertical-align: top;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 42.5rem;
+    width: $width_tab;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .container {
-    width: 871px;
+    width: $width_desk;
   }
 }

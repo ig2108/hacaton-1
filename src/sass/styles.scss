@@ -1,20 +1,22 @@
 /*
    Import partials below
 */
-@import 'helpers/variables';
 @import 'helpers/placeholders';
 @import 'helpers/mixins';
 @import 'helpers/extras';
 @import 'normalize';
 @import 'fonts';
+@import 'helpers/variables';
 @import 'base';
 
 /*
 Components
 */
 
-@import 'components/container';
 @import 'components/clearfix';
+@import 'components/navigation';
+@import 'components/title';
+@import 'components/buger-menu';
 
 /*
 @import 'components/';
